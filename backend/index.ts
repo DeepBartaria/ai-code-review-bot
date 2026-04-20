@@ -135,6 +135,6 @@ wss.on('connection', (ws: WebSocket) => {
 });
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
+server.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`Node backend listening on port ${PORT}`);
 });
